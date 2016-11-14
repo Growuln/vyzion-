@@ -12,10 +12,12 @@ count = 0
 flag = false
 
 while True:
-    if (GPIO.input(20) && (flag==false)):
-        time.sleep(0.05)
-        print("Button Pressed "+str(count)
-        os.system(my_vid)
-        os.system(convertisseur)
-    else
-        flag = true
+    if (GPIO.input(20)) :
+        if (flag==false):
+            flag=True
+            time.sleep(0.05)
+            print("Button Pressed "+str(count))
+            os.system(my_vid)
+            os.system(convertisseur)
+        else
+        flag = True
