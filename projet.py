@@ -3,7 +3,7 @@ import time
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(20,GPIO.IN)
-GPIO.setup(21.out,initial=GPIO.HIGH)
+GPIO.setup(21.OUT,initial=GPIO.HIGH)
 
 count_vid = 0
 my_vid = "raspivid -o myvid"+str(count_vid)+".h264 "
